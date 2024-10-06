@@ -35,6 +35,9 @@ echo "Nodes and Models Install"
 #wget -c https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/resolve/main/v1-5-pruned-emaonly-fp16.safetensors -P ./models/checkpoints/
 wget -c "https://civitai.com/api/download/models/132760?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/AbsoluteReality.safetensors"
 wget -c "https://civitai.com/api/download/models/429454?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/EpicPhotogasm.safetensors"
+wget -c "https://civitai.com/api/download/models/501240?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/RealisticVision.safetensors"
+wget -c "https://civitai.com/api/download/models/143906?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/epiCRealism.safetensors"
+wget -c "https://civitai.com/api/download/models/646523?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/LeoSam.safetensors"
 #w/ Noise Select
 
 # SD2
@@ -42,7 +45,8 @@ wget -c "https://civitai.com/api/download/models/429454?token=2dba7b4fd93f0bd0a9
 #wget -c https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors -P ./models/checkpoints/
 
 # Flux
-wget -c https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors -P ./models/checkpoints/
+#mkdir ./models/checkpoints/unet
+#wget -c https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors -P ./models/checkpoints/unet
 
 # Some SD1.5 anime style
 #wget -c https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix2/AbyssOrangeMix2_hard.safetensors -P ./models/checkpoints/
