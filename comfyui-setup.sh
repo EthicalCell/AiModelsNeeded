@@ -185,4 +185,9 @@ git clone https://github.com/mav-rik/facerestore_cf ./custom_nodes/facerestore_c
 pip install -r ./custom_nodes/facerestore_cf/requirements.txt
 
 git clone https://github.com/marhensa/sdxl-recommended-res-calc ./custom_nodes/sdxl-recommended-res-calc
+
+sudo apt-get install libmagickwand-dev
+git clone https://github.com/Fannovel16/ComfyUI-MagickWand ./custom_nodes/ComfyUI-MagickWand
+pip install -r ./custom_nodes/ComfyUI-MagickWand/requirements.txt
+
 echo "Done!"
