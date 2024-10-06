@@ -41,6 +41,9 @@ wget -c "https://civitai.com/api/download/models/429454?token=2dba7b4fd93f0bd0a9
 #wget -c https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.safetensors -P ./models/checkpoints/
 #wget -c https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors -P ./models/checkpoints/
 
+# Flux
+wget -c https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors -P ./models/checkpoints/
+
 # Some SD1.5 anime style
 #wget -c https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix2/AbyssOrangeMix2_hard.safetensors -P ./models/checkpoints/
 #wget -c https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix3/AOM3A1_orangemixs.safetensors -P ./models/checkpoints/
@@ -73,7 +76,7 @@ wget -c https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/v
 #wget -c https://civitai.com/api/download/models/10638 -O ./models/loras/theovercomer8sContrastFix_sd15.safetensors #theovercomer8sContrastFix SD1.x
 #wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors -P ./models/loras/ #SDXL offset noise lora
 # clone my Loras
-git clone https://github.com/EthicalCell/AiModelsNeeded.git ./models/loras
+git clone https://github.com/EthicalCell/AiModelsNeeded.git ./models/loras/
 
 # T2I-Adapter
 #wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_depth_sd14v1.pth -P ./models/controlnet/
@@ -182,5 +185,4 @@ git clone https://github.com/mav-rik/facerestore_cf ./custom_nodes/facerestore_c
 pip install -r ./custom_nodes/facerestore_cf/requirements.txt
 
 git clone https://github.com/marhensa/sdxl-recommended-res-calc ./custom_nodes/sdxl-recommended-res-calc
-print('Done installing nodes and models')
 echo "Done!"
