@@ -1,3 +1,4 @@
+start=$EPOCHREALTIME
 echo "ComfyUI Install"
 #
 # Install 
@@ -7,7 +8,7 @@ cd ComfyUI
 apt-get install python3.10-venv
 python -m venv venv
 echo "activate venv"
-source comfyvenv/bin/activate
+source venv/bin/activate
 which pip
 which python
 pip install ipykernel
@@ -37,7 +38,7 @@ wget -c "https://civitai.com/api/download/models/132760?token=2dba7b4fd93f0bd0a9
 wget -c "https://civitai.com/api/download/models/429454?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/EpicPhotogasm.safetensors"
 wget -c "https://civitai.com/api/download/models/501240?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/RealisticVision.safetensors"
 wget -c "https://civitai.com/api/download/models/143906?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/epiCRealism.safetensors"
-wget -c "https://civitai.com/api/download/models/646523?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/LeoSam.safetensors"
+#wget -c "https://civitai.com/api/download/models/646523?token=2dba7b4fd93f0bd0a9b4641fdd1a70eb" -O "./models/checkpoints/LeoSam.safetensors"
 #w/ Noise Select
 
 # SD2
@@ -190,8 +191,18 @@ pip install -r ./custom_nodes/facerestore_cf/requirements.txt
 
 git clone https://github.com/marhensa/sdxl-recommended-res-calc ./custom_nodes/sdxl-recommended-res-calc
 
-sudo apt-get install libmagickwand-dev
+apt-get -y install libmagickwand-dev
 git clone https://github.com/Fannovel16/ComfyUI-MagickWand ./custom_nodes/ComfyUI-MagickWand
 pip install -r ./custom_nodes/ComfyUI-MagickWand/requirements.txt
 
+pip install insightface
+git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git ./custom_nodes/ComfyUI_IPAdapter_plus
+wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors -O "./models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors -O "./models/clip_vision/CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors"
+mkdir ./models/ipadapter
+wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors -P ./models/ipadapter
+
 echo "Done!"
+stop=$EPOCHREALTIME
+Elapsed=$(bc -l "<<< $stop - $start")
+echo "$elapsed"
