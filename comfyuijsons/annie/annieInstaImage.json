@@ -772,7 +772,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        9070973190388,
+        109220938329959,
         "randomize",
         10,
         8,
@@ -857,7 +857,7 @@
         3,
         true,
         "",
-        954001475939430,
+        472259011261163,
         "randomize"
       ]
     },
@@ -1000,7 +1000,7 @@
         3,
         true,
         "",
-        448427434999216,
+        1072877190806694,
         "randomize"
       ]
     },
@@ -1596,7 +1596,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        24761120192122,
+        13921085722476,
         "randomize",
         10,
         8,
@@ -1855,7 +1855,7 @@
         512,
         true,
         1024,
-        277335349320916,
+        776093379762558,
         "randomize",
         20,
         8,
@@ -1907,65 +1907,6 @@
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
-    },
-    {
-      "id": 119,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 560,
-        "1": 653
-      },
-      "size": {
-        "0": 210,
-        "1": 246
-      },
-      "flags": {},
-      "order": 32,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 185
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 54,
-      "type": "UpscaleModelLoader",
-      "pos": {
-        "0": 840,
-        "1": -10
-      },
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            90
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "8xnmkd-faces160000g-upscaler.pth"
-      ]
     },
     {
       "id": 161,
@@ -2039,40 +1980,6 @@
       "widgets_values": []
     },
     {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 431,
-        "1": 57
-      },
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            58
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        512,
-        512,
-        1
-      ]
-    },
-    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -2084,7 +1991,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2116,62 +2023,6 @@
       },
       "widgets_values": [
         "AbsoluteReality.safetensors"
-      ]
-    },
-    {
-      "id": 43,
-      "type": "LoraLoader",
-      "pos": {
-        "0": -409,
-        "1": 247
-      },
-      "size": {
-        "0": 315,
-        "1": 126
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 134
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 241
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            135,
-            243
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            242
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "anshoofy.safetensors",
-        0.3,
-        0.3
       ]
     },
     {
@@ -2231,7 +2082,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2264,7 +2115,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2295,7 +2146,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 17,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2312,84 +2163,8 @@
         "color_restricted": 0
       },
       "widgets_values": [
-        973399564216458,
+        386758511359184,
         "randomize"
-      ]
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": -56,
-        "1": 85
-      },
-      "size": {
-        "0": 422.84503173828125,
-        "1": 164.31304931640625
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            40
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "(realistic, North Carolina) [<lora:ashoofy:.3>, woman, white bikini, sexy, dark blonde hair with highlights, flat stomach, aesthetic, realistic, photo:2]"
-      ]
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": -52,
-        "1": 491
-      },
-      "size": {
-        "0": 425.27801513671875,
-        "1": 180.6060791015625
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            41
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "asian, pubic hair, open mouth, butt chin, jewelry, tattoos, accessories, hands, teeth, big eyes, ugly, anime, cgi, unrealistic, cartoon"
       ]
     },
     {
@@ -2462,7 +2237,7 @@
         "Node name for S&R": "ImpactKSamplerBasicPipe"
       },
       "widgets_values": [
-        896248832632257,
+        983451982399797,
         "randomize",
         30,
         2,
@@ -2538,13 +2313,238 @@
         "Node name for S&R": "ImpactKSamplerBasicPipe"
       },
       "widgets_values": [
-        470875047221760,
+        724004893845016,
         "randomize",
         15,
         2,
         "dpmpp_2m",
         "karras",
         0.6
+      ]
+    },
+    {
+      "id": 43,
+      "type": "LoraLoader",
+      "pos": {
+        "0": -409,
+        "1": 247
+      },
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 134
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 241
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            135,
+            243
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            242
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "nnclds.safetensors",
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "id": 119,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 560,
+        "1": 653
+      },
+      "size": {
+        "0": 210,
+        "1": 246
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 185
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 54,
+      "type": "UpscaleModelLoader",
+      "pos": {
+        "0": 840,
+        "1": -10
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            90
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "8x_NMKD-Superscale_150000_G.pth"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": -60,
+        "1": 56
+      },
+      "size": {
+        "0": 422.84503173828125,
+        "1": 164.31304931640625
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            40
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(realistic, North Carolina) [<lora:nnclds:.3>, woman, hiking, black sports bra, sexy, dark blonde hair with highlights, flat stomach, aesthetic, realistic, photo:2]"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 431,
+        "1": 57
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            58
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        512,
+        20
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": -52,
+        "1": 491
+      },
+      "size": {
+        "0": 425.27801513671875,
+        "1": 180.6060791015625
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            41
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "asian, pubic hair, ((watermark, writing text, logos, initials),1.5), open mouth, butt chin, jewelry, tattoos, accessories, hands, teeth, big eyes, ugly, anime, cgi, unrealistic, cartoon"
       ]
     }
   ],
@@ -3008,24 +3008,12 @@
   ],
   "groups": [
     {
-      "title": "Group",
+      "title": "Face Detailer",
       "bounding": [
-        1133,
-        1027,
-        1717,
-        911
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Upscale",
-      "bounding": [
-        814,
-        -155,
-        838,
-        1097
+        1848,
+        -92,
+        996,
+        1066
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -3044,12 +3032,24 @@
       "flags": {}
     },
     {
-      "title": "Face Detailer",
+      "title": "Upscale",
       "bounding": [
-        1848,
-        -92,
-        996,
-        1066
+        814,
+        -155,
+        838,
+        1097
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Group",
+      "bounding": [
+        1133,
+        1027,
+        1717,
+        911
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -3059,10 +3059,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909091,
+      "scale": 0.6209213230591556,
       "offset": [
-        909.6528162388838,
-        72.11750956192662
+        864.1589466934762,
+        38.35019404649402
       ]
     },
     "groupNodes": {}
